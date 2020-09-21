@@ -1,0 +1,22 @@
+<%- include("partials/header") -%>
+
+<div class="box">
+    <h1 id="heading"><%= FOCUS %></h1>
+</div>
+
+<div class="box">
+       
+    <% for(var i=0;i<soft.length;i++){ %> 
+        <div class ="item"><input type="checkbox">
+        <p><%= soft[i] %></p>
+    </div>
+    <% } %>
+
+<form action="/" method="post">
+    <input type="text" name="newList" placeholder="Add Item" autocomplete="off"/>
+    <button type="submit" name="submit" >+</button>
+</form>
+
+</div>
+
+<%- include("partials/footer") -%>

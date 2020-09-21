@@ -1,0 +1,16 @@
+db.production.insert({_id: 1, 
+name: "rubber",
+price: 1.5,
+stock: 45,
+reviews: [
+    {
+        name: "caleb",
+        rating: 5,
+        comment: "Too good to be a rubber"
+    },
+    {
+        name: "uti",
+        rating: 4,
+        comment: "Rubber indeed"
+    }
+]})
